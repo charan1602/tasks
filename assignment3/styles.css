@@ -1,0 +1,119 @@
+.bar1{
+    height: 30px;
+    background-color: rgb(73, 73, 227);
+}
+.bar2{
+    background-color: rgb(108, 108, 166);
+    display: flex;
+    justify-content: center;
+    height: 150px;
+}
+header{
+   display: flex;
+   flex-direction: column;
+
+}
+.gridcontainer{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    /* align-items: center; */
+    
+}
+.feature1{
+    background-color: rgb(205, 161, 79);
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    height: 200px;
+    
+}
+.feature2{
+    background-color: rgb(199, 134, 199);
+    grid-column-start: 3;
+    grid-column-end: span 2;
+    height: 200px;
+}
+.feature3{
+    background-color: rgb(226, 115, 115);
+    grid-column-start: 5;
+    grid-column-end: span 2;
+    height: 200px;
+}
+.signup{
+    background-color: rgb(135, 190, 190);
+    grid-column-end: span 6;
+    height: 100px;
+}
+.content{
+    background-color: rgb(167, 164, 164);
+    grid-column-end: span 6;
+    height: 300px;
+   
+}
+.gridcontainer>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media(max-width:768px){
+    .gridcontainer{
+        display: grid;
+        /* grid-template-columns: auto auto; */
+    }
+    .content{
+        grid-row-start: 1;
+        grid-column-end: span 6;
+    }
+    .signup{
+        /* grid-column-start: 1; */
+        grid-row-start: 2;
+        grid-column-start: 1;
+        grid-column-end: span 3;
+        height: 200px;
+    }
+    .feature1{
+
+       grid-column-start: 4;
+       grid-column-end: span 3;
+    }
+    .feature2{
+        /* grid-row-start: 3; */
+        grid-row-start: 3;
+        grid-column-start: 1;
+        grid-column-end: span 3;
+    }
+    .feature3{
+        grid-column-start: 4;
+        grid-column-end: span 3;
+    }
+}
+@media(max-width:576px){
+    .gridcontainer{
+        display: grid;
+    }
+    .content{
+        grid-row-start: 1;
+        
+    }
+    .signup{
+        grid-row-start: 2;
+        grid-column-start: 1;
+       grid-column-end: span 6;
+    }
+    .feature1{
+
+        grid-row-start: 3;
+        grid-column-start: 1;
+        grid-column-end: span 6;
+        
+    }
+    .feature2{
+        grid-row-start: 4;
+        grid-column-start: 1;
+        grid-column-end: span 6;
+    }
+    .feature3{
+        grid-row-start: 5;
+        grid-column-start: 1;
+        grid-column-end: span 6; 
+    }
+}
