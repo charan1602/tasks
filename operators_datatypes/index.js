@@ -61,3 +61,5 @@ let result7 = var1<=var2
 console.log(result7)   //less than or equal to equal to
 let result8 = var1>=var2
 console.log(result8)   //greater than or equal to
+
+// console.log(results)
