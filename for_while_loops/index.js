@@ -37,19 +37,21 @@ while(n<=20){
 
 // 4 sum of odd numbers
 let odd=1
+let sum1 = 0
 while(odd<=20){
     if(odd%2 != 0 )
     {
-        console.log(odd)
+        sum1 += odd
     }
     odd++
 }
+console.log(sum1)
 
 // 5.factorial calculation
-let multy =1
+let multi =1
 let fact = 5
 while(fact>=1){
-   multy = multy*fact
+   multi = multi*fact
    fact--
 }
-console.log(multy)
+console.log(multi)
