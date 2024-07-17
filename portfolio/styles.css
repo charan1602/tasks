@@ -51,14 +51,21 @@
 .heading{
 grid-column-end:span 2 ;
 }
-.info{
+.info > div{
    /* display: flex;
      flex-direction: column; */
      display: flex;
      flex-direction: column;
      justify-content: center;
      align-items: center;
-     text-align: center;
+    
+}
+.info p{
+    text-align: center;
+    text-align: justify;
+}
+.para{
+    padding-left: 25px;
 }
 .skills{
     display: flex;
@@ -165,6 +172,12 @@ footer h1{
         align-items: center;
         justify-content: center;
         justify-content: space-around;
+}
+.con3{
+    margin-bottom: 20px;
+}
+.con4{
+    margin-bottom: 20px;
 }
 /* .bi{
     height: 30px;
