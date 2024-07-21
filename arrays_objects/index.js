@@ -42,8 +42,8 @@ let person_details = {
     name:"charan",
     age:21,
     address:{
-        street:"sai nagar"
-        ,city:"hyd",
+        street:"suddapalle"
+        ,city:"kadapa",
         zipcode:516411
     }
 }
@@ -51,3 +51,8 @@ console.log(person_details)
 
 // accessing object properties
 console.log(person_details.address.city)
+
+
+//arrow function
+let greet = (name1) => {console.log("hello " + name1 +"!")}
+greet("charan")
