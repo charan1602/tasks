@@ -10,7 +10,8 @@ let student ={
     }
 }
 let student1 = Object.assign(student)
-student1.address.city = "jammalamadugu"
+// student1.name = "usha"
+student.address.city = "jammalamadugu"
 console.log("student1",student1)
 console.log("student",student)
 
